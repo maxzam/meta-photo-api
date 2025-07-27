@@ -1,0 +1,36 @@
+{
+  "name": "meta-photo-api",
+  "version": "1.0.0",
+  "description": "meta-photo-api",
+  "main": "dist/server.js",
+  "scripts": {
+    "build": "npx tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev --respawn --transpile-only src/server.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maxzam/meta-photo-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maxzam/meta-photo-api/issues"
+  },
+  "homepage": "https://github.com/maxzam/meta-photo-api#readme",
+  "dependencies": {
+    "@fastify/cors": "^11.0.1",
+    "@fastify/sensible": "^6.0.3",
+    "axios": "^1.11.0",
+    "fastify": "^5.4.0",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/node": "^24.1.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.8.3"
+  }
+}
