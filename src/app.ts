@@ -7,7 +7,7 @@ import photosRoutes from "./routes/photosRoutes";
 const app: FastifyPluginAsync = async (fastify, opts) => {
   fastify.register(sensible);
   fastify.register(cors, {
-    origin: "*", // dominio
+    origin: "*",
     methods: ["GET"],
   });
   fastify.register(externalServicePlugin);
